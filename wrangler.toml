@@ -1,0 +1,19 @@
+name = "oauth-mcp-server"
+main = "src/index.ts"
+compatibility_date = "2023-12-01"
+
+[env.production.vars]
+ENVIRONMENT = "production"
+
+# JWT secret will be set via: wrangler secret put JWT_SECRET
+# Use a strong random string, e.g.: openssl rand -base64 32
+
+# Uncomment and configure custom domain if needed
+# [env.production]
+# routes = [
+#   { pattern = "your-domain.com/*", custom_domain = true }
+# ]
+
+# For development
+[env.development.vars]
+ENVIRONMENT = "development"

@@ -1,0 +1,25 @@
+{
+  "name": "oauth-mcp-server",
+  "version": "1.0.0",
+  "description": "Minimal OAuth-compliant MCP server for Claude Web integration",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "build": "wrangler deploy --dry-run",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": [
+    "mcp",
+    "oauth",
+    "claude",
+    "cloudflare-workers"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20231025.0",
+    "wrangler": "^3.0.0"
+  },
+  "dependencies": {}
+}
